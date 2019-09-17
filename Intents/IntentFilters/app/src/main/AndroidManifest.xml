@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.intentfilters">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!--Now here we have given the category as default i.e it should give the use the option if he/she wants to make this app as default app when to browse some app-->
+            <!--it will only open the borweser of scheme"http" and host "cbandroid.com". No other url will be able to open . If you want to open all the urls of http use the *(Serach it on net)-->
+            <intent-filter>
+                <action android:name="android.intent.action.View" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"
+                      android:host="cbandroid.com"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

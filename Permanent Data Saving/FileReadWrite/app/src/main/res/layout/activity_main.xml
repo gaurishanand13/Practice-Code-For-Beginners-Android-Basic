@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:hint="Enter The Text Here"/>
+    <Button
+            android:text="SAVE THE DATA IN THE FILE DELETING THE OLD DATA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/SaveButton" android:textSize="18sp"/>
+    <Button
+            android:text="APPEND THE DATA TO THE PREVIOUSLY SAVED DATA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/AppendButton" android:textSize="18sp"/>
+    <Button
+            android:text="OUTPUT IT IN THE TEXT VIEW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/OutputButton" android:textSize="18sp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="18sp"/>
+</LinearLayout>

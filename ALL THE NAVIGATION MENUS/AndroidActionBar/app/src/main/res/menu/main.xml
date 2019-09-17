@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Here title is used to show for what this menuItem is for. If its on
+     the side(dot menu) then this text will also displayed in the menu,But if
+      the menuItem is on the action Bar with icon,Then on long press we can see the title of that item-->
+
+    <!--showAsAction is used whether we want to show as icon seperately or whether we want to show in th side list
+     (Dot List). In general use "ifRoom" it will display icon seperatory here only if space is there
+      and use "never" if you want to display in the side dot menu-->
+    <!--It may happen on putting "ifRoom" in showAsAction, item icon may not come straight but come in the list.
+    But when we bring the phone in portrait mode since it will have space. Therefore the icon then comes instead of list-->
+
+    <!--orderInCategory is used to display the order in which the menu items should be displayed. Less is the value
+    , first they will. If 2 items have same order value then they will come in the order in which they are
+    declared in the xml file-->
+    <item android:title="Download"
+          android:id="@+id/download"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/download"
+          android:orderInCategory="102"/>
+    <item android:title="copy"
+          android:id="@+id/copy"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/contentcopy"
+          android:orderInCategory="102"/>
+    <item android:title="refresh"
+          android:id="@+id/refresh"
+          app:showAsAction="ifRoom"
+          android:icon="@drawable/refresh"
+          android:orderInCategory="102"/>
+    <item android:title="ADD A NAME"
+          android:id="@+id/add"
+          app:showAsAction="never"
+          android:orderInCategory="102"/>
+    <item android:title="ADD EMAIL ID"
+          android:id="@+id/email"
+          app:showAsAction="never"
+          android:orderInCategory="102"/>
+</menu>

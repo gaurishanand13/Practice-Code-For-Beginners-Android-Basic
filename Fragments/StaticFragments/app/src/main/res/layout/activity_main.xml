@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!--Any attribute begining with tools won't make any changes in our apps-->
+    <!--if we don't even use it, then also there will be no difference-->
+    <!-- here too like we are using tool(layout argument to seee how it looks here.
+    if we don't use it here then also it appears same in the main app)-->
+
+    <fragment
+            tools:layout="@layout/fragment_count_up"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:name="com.example.staticfragments.CountUpFragment"
+            android:id="@+id/CountUpFragment"/>
+    <fragment
+            tools:layout="@layout/fragment_count_down"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:name="com.example.staticfragments.CountDownFragment"
+            android:id="@+id/CountDownFragment"/>
+</LinearLayout>
